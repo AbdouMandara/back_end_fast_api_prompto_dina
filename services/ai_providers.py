@@ -61,4 +61,3 @@ def call_huggingface_router(prompt: str, model: str = "google/gemma-4-31B-it:nov
             return item.get("text", "") if isinstance(item, dict) else str(item)
         return str(content)
     return str(message)
-
